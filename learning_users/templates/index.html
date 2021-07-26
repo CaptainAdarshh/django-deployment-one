@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body_block %}
+<div class="jumbotron">
+<h1>Welcome to Home Page</h1>
+{% if user.is_authenticated %}
+<a class='btn btn-success' href="{% url 'special' %}">Special</a>
+
+{% endif %}
+</div>
+{% endblock %}
